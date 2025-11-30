@@ -14,6 +14,7 @@
     --var-line-height: 1.5;
     --var-letter-spacing: 0;
     --var-font-weight-bold: 800;
+    --var-font-weight-regular: 400;
 }
 
 *,
@@ -41,30 +42,16 @@ img {
 
 h2 {
     font-size: var(--var-header-text-size);
-}
-
-h3 {
-    background-color: var(--var-background-color);
-    font-size: var(--var-button-text-size);
     line-height: var(--var-line-height);
-    letter-spacing: var(--var-letter-spacing);
 }
 
-h4 {
-    font-size: var(--var-button-text-size);
-}
-
-p {
-    font-size: var(--var-desc-text-size);
-    color: var(--var-text-color);
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .card-container {
     max-width: 100%;
-}
-
-a {
-    text-decoration: none;
 }
 
 .card {
@@ -87,6 +74,10 @@ a {
 }
 
 .text-container {
+    color: black;
+    line-height: var(--var-line-height);
+    letter-spacing: var(--var-letter-spacing);
+
     & > * {
         margin-block-end: 0.75rem;
         margin-inline-end: auto;
@@ -97,7 +88,11 @@ a {
     }
 }
 
-.card-header {
+.card-topic {
+    background-color: var(--var-background-color);
+    font-size: var(--var-button-text-size);
+    font-weight: var(--var-font-weight-bold);
+
     padding-block: 0.25rem;
     padding-inline: 0.75rem;
     border-radius: 0.25rem;
@@ -113,6 +108,15 @@ a {
     }
 }
 
+.card-date {
+    font-size: var(--var-button-text-size);
+    font-weight: var(--var-font-weight-regular);
+}
+
+.card-description {
+    color: var(--var-text-color);
+}
+
 .author-container {
     display: flex;
     align-items: center;
@@ -126,4 +130,5 @@ a {
 .author-name{
     font-size: var(--var-button-text-size);
     font-weight: var(--var-font-weight-bold);
+    line-height: var(--var-line-height);
 }
