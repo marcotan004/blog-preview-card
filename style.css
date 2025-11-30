@@ -63,6 +63,10 @@ p {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .card {
     background-color: white;
     display: flex;
@@ -106,10 +110,6 @@ p {
     :focus, 
     :invalid {
         color: var(--var-background-color);
-    }
-
-    a {
-        text-decoration: none;
     }
 }
 
