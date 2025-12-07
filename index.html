@@ -12,23 +12,26 @@
   <title>Frontend Mentor | Blog preview card</title>
 </head>
 <body>
-
-  <div class="card-container">
+  <main>
     <div class="card">
-      <img src="assets/images/illustration-article.svg" alt="css-theme"/>
-      <div class="text-container">
-        <p class="card-topic">Learning</p>
-        <p class="card-date">Published <time datetime="2023-12-21">21 Dec 2023</p></>
-        <h2 class="card-link">
-          <a href="./index.html">HTML & CSS foundations</a>
-        </h2>
-        <p class="card-description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="preview">
+        <img src="assets/images/illustration-article.svg" alt="css-theme"/>
       </div>
-      <div class="author-container">
-        <img class="author-icon" src="assets/images/image-avatar.webp" alt="course-author"/>
-        <p class="author-name">Greg Hooper</p>
+      <div class="content">
+        <div class="topic">
+          <p>Learning</p>
+        </div>
+        <p>Published <time datetime="2023-12-21">21 Dec 2023</p>
+        <h2><a href="#">HTML & CSS foundations</a></h2>
+        <div class="description">
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+      </div>
+      <div class="author">
+        <img class="avatar" src="assets/images/image-avatar.webp" alt="course-author"/>
+        <h4>Greg Hooper</h4>
       </div>
     </div>
-  </div>
+  </main>
 </body>
 </html>
